@@ -1,0 +1,3 @@
+# Copy to config.yml and change suit your environment
+
+data_source: "mysql://localhost/database"

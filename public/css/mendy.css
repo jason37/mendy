@@ -1,0 +1,13 @@
+h1 {
+  padding: 0 0 24px 0;
+}
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+select, input {
+  float: right;
+  padding: 8px 4px 4px 8px;
+}

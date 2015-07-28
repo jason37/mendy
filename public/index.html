@@ -1,0 +1,294 @@
+<html>
+  <head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mendy.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Reco&mdash;Mendy Project</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <form id="choices" action="http://localhost:4567" method="get">
+          <div class="col-md-5">
+            <div>
+              <label for="application">What kind of thing are you making?</label>
+              <select id="application" class="chooser" name="application">
+                <option value="0">select one</option>
+                <option value="305">Athletic</option>
+                <option value="306">Blueprint</option>
+                <option value="307">Camping</option>
+                <option value="308">Cartoon</option>
+                <option value="309">Certificate</option>
+                <option value="310">Children</option>
+                <option value="313">Crafts</option>
+                <option value="316">Flyer</option>
+                <option value="317">Graffiti</option>
+                <option value="320">Invitation</option>
+                <option value="321">Maps</option>
+                <option value="322">Money</option>
+                <option value="324">Packaging</option>
+                <option value="326">Instructional</option>
+                <option value="327">Schoolbook</option>
+                <option value="328">Screen</option>
+                <option value="329">Signage</option>
+                <option value="331">Small Print</option>
+                <option value="332">Video Game</option>
+                <option value="333">Wedding</option>
+                <option value=""></option>
+              </select>
+            </div>
+            <br clear="all">
+            <div>
+              <label for="emotion">What kind of emotion to show?</label>
+              <select id="emotion" class="chooser" name="emotion">
+                <option value="0">select one</option>
+                <option value="206">Aggressive</option>
+                <option value="207">Angry</option>
+                <option value="208">Calm</option>
+                <option value="209">Casual</option>
+                <option value="210">Dull</option>
+                <option value="211">Friendly</option>
+                <option value="212">Fun</option>
+                <option value="213">Funny</option>
+                <option value="214">Lively</option>
+                <option value="215">Loud</option>
+                <option value="216">Love</option>
+                <option value="217">Nervous</option>
+                <option value="218">Nostalgic</option>
+                <option value="219">Passionate</option>
+                <option value="220">Powerful</option>
+                <option value="221">Sad</option>
+                <option value="222">Wild</option>
+              </select>
+            </div>
+            <br clear="all">
+            <!--
+            <div>
+              <label for="classification">Font classification</label>
+              <select id="classification" class="chooser" name="classification">
+                <option value="0">select one</option>
+                <option value="1">Serif</option>
+                <option value="10">Glyphic</option>
+                <option value="19">Slab Serif</option>
+                <option value="26">Sans Serif</option>
+                <option value="36">Titling</option>
+                <option value="38">Uncial</option>
+                <option value="39">Monospaced</option>
+                <option value="41">Decorative</option>
+                <option value="52">Pixelated</option>
+                <option value="58">Blackletter</option>
+                <option value="68">Script</option>
+                <option value="79">Symbols</option>
+              </select>
+            </div>
+          -->
+            <div>
+              <label for="physical">Physical appearance</label>
+              <select id="physical" name="physical" class="chooser">
+                <option value="0">select one</option>
+                <option value="43">3D</option>
+                <option value="223">abstract</option>
+                <option value="224">amorphous</option>
+                <option value="225">angular</option>
+                <option value="226">antiqued</option>
+                <option value="227">backslanted</option>
+                <option value="62">bastarda</option>
+                <option value="228">blurry</option>
+                <option value="230">bouncy</option>
+                <option value="229">boxes</option>
+                <option value="22">bracketed</option>
+                <option value="231">bulky</option>
+                <option value="232">cameo</option>
+                <option value="233">camping</option>
+                <option value="73">casual</option>
+                <option value="71">chancery</option>
+                <option value="234">circles</option>
+                <option value="23">clarendon</option>
+                <option value="235">clean</option>
+                <option value="236">common</option>
+                <option value="237">connected script</option>
+                <option value="70">copperplate script</option>
+                <option value="238">corroded</option>
+                <option value="239">cropped</option>
+                <option value="240">curly</option>
+                <option value="241">cute</option>
+                <option value="242">delicate</option>
+                <option value="243">dirty</option>
+                <option value="244">dotted</option>
+                <option value="245">elegant</option>
+                <option value="246">elliptical</option>
+                <option value="247">experimental</option>
+                <option value="375">extremely heavy</option>
+                <option value="286">extremely light</option>
+                <option value="248">fancy</option>
+                <option value="249">fat</option>
+                <option value="250">feminine</option>
+                <option value="14">flare serif</option>
+                <option value="251">flourished</option>
+                <option value="252">flowing</option>
+                <option value="72">formal</option>
+                <option value="253">formal (extreme)</option>
+                <option value="5">garalde</option>
+                <option value="33">geometric</option>
+                <option value="255">graffiti</option>
+                <option value="254">grainy</option>
+                <option value="31">grotesque</option>
+                <option value="44">handtooled</option>
+                <option value="256">high contrast</option>
+                <option value="30">humanist</option>
+                <option value="257">illegible</option>
+                <option value="45">inline</option>
+                <option value="258">jagged</option>
+                <option value="259">kitsch</option>
+                <option value="260">lapidary</option>
+                <option value="17">latin serif</option>
+                <option value="261">layerable</option>
+                <option value="262">masculine</option>
+                <option value="263">minimalist (extreme)</option>
+                <option value="7">modern</option>
+                <option value="35">monolinear</option>
+                <option value="264">multilinear</option>
+                <option value="265">organic (need your help)</option>
+                <option value="266">ornate</option>
+                <option value="46">outline</option>
+                <option value="267">patterned</option>
+                <option value="268">ransom note</option>
+                <option value="269">regal</option>
+                <option value="74">ronde</option>
+                <option value="66">rotunda</option>
+                <option value="270">rough</option>
+                <option value="271">rounded (terminals)</option>
+                <option value="272">rustic</option>
+                <option value="27">sans serif</option>
+                <option value="28">sanserif</option>
+                <option value="273">scary</option>
+                <option value="274">scotch roman</option>
+                <option value="275">sexual</option>
+                <option value="48">shaded</option>
+                <option value="47">shadowed</option>
+                <option value="276">sharp</option>
+                <option value="277">sketched</option>
+                <option value="278">sloppy</option>
+                <option value="279">smooth</option>
+                <option value="280">soft</option>
+                <option value="69">spencerian script</option>
+                <option value="281">square</option>
+                <option value="282">strange</option>
+                <option value="34">stressed</option>
+                <option value="283">strong</option>
+                <option value="284">techno</option>
+                <option value="64">textura</option>
+                <option value="11">tiny serif</option>
+                <option value="285">top heavy</option>
+                <option value="6">transitional</option>
+                <option value="51">unicase</option>
+                <option value="75">upright script</option>
+                <option value="2">venetian</option>
+                <option value="287">very tall</option>
+                <option value="288">very wide</option>
+                <option value="289">wavy</option>
+                <option value="16">wedge serif</option>
+              </select>
+            </div>
+            <br clear="all">
+            <div>
+              <label for="era">Era</label>
+              <select id="era" class="chooser" name="era">
+                <option value="0">select one</option>
+                <option value="171">prehistoric</option>
+                <option value="172">historical</option>
+                <option value="173">middle ages</option>
+                <option value="174">renaissance</option>
+                <option value="175">1600s</option>
+                <option value="176">1700s</option>
+                <option value="177">gothic</option>
+                <option value="178">rococo</option>
+                <option value="179">baroque</option>
+                <option value="180">1800s</option>
+                <option value="181">victorian</option>
+                <option value="182">antique</option>
+                <option value="183">old west</option>
+                <option value="184">art nouveau</option>
+                <option value="185">1900s</option>
+                <option value="186">1910s</option>
+                <option value="187">1920s</option>
+                <option value="188">art deco</option>
+                <option value="189">de stijl</option>
+                <option value="190">1930s</option>
+                <option value="191">arts and crafts</option>
+                <option value="192">bauhaus</option>
+                <option value="193">1940s</option>
+                <option value="194">1950s</option>
+                <option value="195">retro</option>
+                <option value="196">1960s</option>
+                <option value="197">psychedelic</option>
+                <option value="198">1970s</option>
+                <option value="199">disco</option>
+                <option value="200">1980s</option>
+                <option value="201">grunge</option>
+                <option value="202">1990s</option>
+                <option value="203">post modern</option>
+                <option value="204">contemporary</option>
+                <option value="205">futuristic</option>
+              </select>
+            </div>
+            <br clear="all">
+            <div>
+              <label for="tool">Writing tool</label>
+              <select id="tool" class="chooser" name="tool">
+                <option value="0">select one</option>
+                <option value="86">brush</option>
+                <option value="92">calligraphic</option>
+                <option value="96">chalk</option>
+                <option value="97">incised</option>
+                <option value="103">computer</option>
+                <option value="112">crayon</option>
+                <option value="114">embossed</option>
+                <option value="116">engraved</option>
+                <option value="120">felt tip pen</option>
+                <option value="124">grid</option>
+                <option value="127">hand drawn</option>
+                <option value="130">hand written adult</option>
+                <option value="134">hand written child</option>
+                <option value="137">rubber stamp</option>
+                <option value="139">stencil</option>
+                <option value="146">typewriter</option>
+                <option value="150">wood cut</option>
+              </select>
+            </div>
+            <br clear="all">
+            <div id="algorithms_selector">
+              <label for="algorithm">similarity algorithm</label>
+              <select name="algorithm" id="algorithm" class="chooser">
+                <option value="similar">SIMILARITY_COOCCURRENCE</option>
+                <option value="similar_loglikelihood">SIMILARITY_LOGLIKELIHOOD</option>
+                <option value="similar_tanimoto">SIMILARITY_TANIMOTO_COEFFICIENT</option>
+                <option value="similar_cityblock">SIMILARITY_CITY_BLOCK</option>
+                <option value="similar_cosine">SIMILARITY_COSINE</option>
+                <option value="similar_euclidean">SIMILARITY_EUCLIDEAN_DISTANCE</option>
+              </select>
+            </div>
+            <br clear="all">
+            <input type="reset" value="clear fields">
+          </form>
+        </div>
+
+        <div class="col-md-7">
+          <h2>Suggested typefaces&#133;</h2>
+          <div id="suggestions">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/mendy.js"></script>
+
+  </body>
+</html>
